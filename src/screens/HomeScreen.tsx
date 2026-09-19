@@ -39,7 +39,7 @@ export function HomeScreen() {
     load();
   }, [load]);
   return (
-    <SafeAreaView style={s.safe} edges={["top"]}>
+    <SafeAreaView style={s.safe} edges={["top", "bottom"]}>
       <ScrollView
         refreshControl={
           <RefreshControl
