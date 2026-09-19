@@ -8,7 +8,7 @@ import { colors, spacing } from "../theme";
 export function FavoritesScreen() {
   const { favorites } = useFavorites();
   return (
-    <SafeAreaView style={s.safe} edges={["top"]}>
+    <SafeAreaView style={s.safe} edges={["top", "bottom"]}>
       <Text style={s.heading}>Your favourites</Text>
       <Text style={s.sub}>{favorites.length} saved songs</Text>
       <FlatList
