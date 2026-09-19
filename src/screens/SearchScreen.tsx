@@ -40,7 +40,7 @@ export function SearchScreen() {
     return () => clearTimeout(timer);
   }, [query]);
   return (
-    <SafeAreaView style={s.safe} edges={["top"]}>
+    <SafeAreaView style={s.safe} edges={["top", "bottom"]}>
       <Text style={s.heading}>Search</Text>
       <View style={s.search}>
         <Search color={colors.muted} size={20} />
